@@ -6,10 +6,30 @@
   --feature-color-lighter: #a2c11c;
   --heading-font: "Yellowtail", cursive;
   --body-font: "Lato", sans-serif;
+  --box-shadow-darker: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  --box-shadow-lighter: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 60px;
 }
 
 h1,
@@ -20,5 +40,129 @@ h2 {
 
 p {
   font-family: var(--body-font);
+  font-size: 25px;
   color: var(--text-color);
+}
+
+nav li {
+  font-family: var(--body-font);
+  font-size: 25px;
+  padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.title-center {
+  margin: 100px 0 50px 0;
+  text-align: center;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/running-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 50px;
+  width: 100%;
+}
+
+.hero-text {
+  color: var(--background-color);
+  letter-spacing: 5px;
+}
+
+.intro-para {
+  padding: 50px;
+}
+
+.benefits,
+.image-gallery,
+.members {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 100px 100px 100px;
+}
+
+.image-gallery {
+  margin-top: 100px;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: var(--box-shadow-darker);
+}
+
+.card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-text {
+  margin: 20px;
+}
+
+.facebook-map-container {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 150px;
+}
+
+.facebook,
+.map {
+  border: 5px solid var(--feature-color-darker);
+  border-radius: 20px;
+  padding: 50px 150px;
+  text-align: center;
+}
+
+.button-lg {
+  background-color: var(--feature-color-lighter);
+  border: 5px solid var(--feature-color-lighter);
+  border-radius: 20px;
+  color: var(--text-color);
+  font-family: var(--heading-body);
+  font-size: 25px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.button-lg:hover {
+  background-color: var(--background-color);
+  border: 5px solid var(--feature-color-darker);
+  box-shadow: var(--box-shadow-darker);
+}
+
+.google-map {
+  border-radius: 20px;
+  box-shadow: var(--box-shadow-darker);
+  margin-top: 30px;
+  width: 100%;
+}
+
+.footer-container {
+  align-items: center;
+  background-color: var(--feature-color-lighter);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.social-icon {
+  color: var(--text-color);
+  font-size: 50px;
+  padding: 0 50px;
+}
+
+.georgina {
+  text-decoration: underline;
 }
