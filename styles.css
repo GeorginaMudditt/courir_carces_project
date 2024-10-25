@@ -56,7 +56,7 @@ a {
 }
 
 .title-center {
-  margin: 100px 0 50px 0;
+  margin: 200px 0 50px 0;
   text-align: center;
 }
 
@@ -66,7 +66,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 50px;
+  padding: 220px 50px 100px 50px;
   width: 100%;
 }
 
@@ -81,7 +81,8 @@ a {
 
 .benefits,
 .image-gallery,
-.members {
+.members,
+.parcours {
   display: flex;
   justify-content: space-around;
   margin: 0 100px 100px 100px;
@@ -102,6 +103,15 @@ a {
   height: 300px;
   object-fit: cover;
   object-position: top;
+}
+
+.parcours img {
+  padding: 20px;
+  object-position: left;
+}
+
+#river-pic {
+  object-position: center;
 }
 
 .card-text {
