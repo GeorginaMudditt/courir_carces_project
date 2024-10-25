@@ -1,0 +1,24 @@
+/* CSS Variables */
+:root {
+  --background-color: #e0e0e0;
+  --text-color: #283739;
+  --feature-color-darker: #2c5d63;
+  --feature-color-lighter: #a2c11c;
+  --heading-font: "Yellowtail", cursive;
+  --body-font: "Lato", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+}
+
+p {
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
