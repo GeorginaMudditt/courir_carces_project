@@ -129,7 +129,7 @@ a {
 .map {
   border: 5px solid var(--feature-color-darker);
   border-radius: 20px;
-  padding: 50px 150px;
+  padding: 50px 100px;
   text-align: center;
 }
 
