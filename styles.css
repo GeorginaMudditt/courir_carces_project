@@ -12,6 +12,8 @@
     rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+/* Global CSS */
+
 html,
 body {
   margin: 0;
@@ -60,24 +62,25 @@ a {
   text-align: center;
 }
 
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("images/running-hero.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 220px 50px 100px 50px;
+.button-lg {
+  background-color: var(--feature-color-lighter);
+  border: 5px solid var(--feature-color-lighter);
+  border-radius: 20px;
+  color: var(--text-color);
+  font-family: var(--heading-body);
+  font-size: 25px;
+  margin-top: 30px;
+  padding: 10px 20px;
   width: 100%;
 }
 
-.hero-text {
-  color: var(--background-color);
-  letter-spacing: 5px;
+.button-lg:hover {
+  background-color: var(--background-color);
+  border: 5px solid var(--feature-color-darker);
+  box-shadow: var(--box-shadow-darker);
 }
 
-.intro-para {
-  padding: 50px;
-}
+/* Gallery/Grid CSS */
 
 .image-gallery,
 .members,
@@ -104,21 +107,6 @@ a {
   object-position: top;
 }
 
-.undraw {
-  margin: 0 auto;
-  width: 300px;
-  height: 300px;
-}
-
-.parcours img {
-  padding: 20px;
-  object-position: left;
-}
-
-#river-pic {
-  object-position: center;
-}
-
 .card-text {
   margin: 20px;
 }
@@ -135,6 +123,33 @@ a {
   margin-bottom: 100px;
 }
 
+/* Accueil CSS */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/running-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 220px 50px 100px 50px;
+  width: 100%;
+}
+
+.hero-text {
+  color: var(--background-color);
+  letter-spacing: 5px;
+}
+
+.intro-para {
+  padding: 50px;
+}
+
+.undraw {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
+
 .facebook,
 .map {
   border: 5px solid var(--feature-color-darker);
@@ -143,30 +158,25 @@ a {
   text-align: center;
 }
 
-.button-lg {
-  background-color: var(--feature-color-lighter);
-  border: 5px solid var(--feature-color-lighter);
-  border-radius: 20px;
-  color: var(--text-color);
-  font-family: var(--heading-body);
-  font-size: 25px;
-  margin-top: 30px;
-  padding: 10px 20px;
-  width: 100%;
-}
-
-.button-lg:hover {
-  background-color: var(--background-color);
-  border: 5px solid var(--feature-color-darker);
-  box-shadow: var(--box-shadow-darker);
-}
-
 .google-map {
   border-radius: 20px;
   box-shadow: var(--box-shadow-darker);
   margin-top: 30px;
   width: 100%;
 }
+
+#river-pic {
+  object-position: center;
+}
+
+/* Nos Parcours CSS */
+
+.parcours img {
+  padding: 20px;
+  object-position: left;
+}
+
+/* Footer CSS */
 
 .footer-container {
   align-items: center;
@@ -186,3 +196,5 @@ a {
 .georgina {
   text-decoration: underline;
 }
+
+/* Media Queries */
