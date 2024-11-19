@@ -237,7 +237,8 @@ a {
   }
 
   .benefits,
-  .facebook-map-container {
+  .facebook-map-container,
+  .inscriptions-press-container {
     grid-template-columns: 1fr;
     grid-gap: 20px;
     margin: 20px auto;
