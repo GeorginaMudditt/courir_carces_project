@@ -40,10 +40,12 @@ h2 {
   color: var(--text-color);
 }
 
-p {
+p,
+li {
   font-family: var(--body-font);
-  font-size: 25px;
+  font-size: 30px;
   color: var(--text-color);
+  margin: 0;
 }
 
 nav li {
@@ -57,8 +59,16 @@ a {
   color: var(--text-color);
 }
 
+ul {
+  padding: 0 0 50px 100px;
+}
+
 .title-center {
   margin: 200px 0 50px 0;
+  text-align: center;
+}
+
+.sub-heading {
   text-align: center;
 }
 
@@ -78,6 +88,10 @@ a {
   background-color: var(--background-color);
   border: 5px solid var(--feature-color-darker);
   box-shadow: var(--box-shadow-darker);
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 /* Gallery/Grid CSS */
@@ -112,11 +126,12 @@ a {
 }
 
 .facebook-map-container,
+.inscriptions-press-container,
 .benefits {
   display: grid;
   grid-gap: 100px;
   grid-template-columns: 1fr 1fr;
-  margin: 0 150px;
+  margin: 0 150px 50px 150px;
 }
 
 .benefits {
@@ -151,6 +166,8 @@ a {
 }
 
 .facebook,
+.inscriptions,
+.press,
 .map {
   border: 5px solid var(--feature-color-darker);
   border-radius: 20px;
