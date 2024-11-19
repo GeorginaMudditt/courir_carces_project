@@ -142,7 +142,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 220px 50px 100px 50px;
+  padding: 220px 50px 100px 150px;
   width: 100%;
 }
 
@@ -152,7 +152,7 @@ a {
 }
 
 .intro-para {
-  padding: 50px;
+  padding: 50px 150px;
 }
 
 .undraw {
@@ -192,7 +192,11 @@ a {
 /* Course du Lac CSS */
 
 .race-times {
-  padding: 0 0 50px 100px;
+  padding: 0 0 50px 200px;
+}
+
+.course-pics {
+  margin: 50px 100px 10px 100px;
 }
 
 /* Footer CSS */
@@ -231,6 +235,10 @@ a {
     text-align: center;
   }
 
+  .hero {
+    padding: 220px 50px 50px 50px;
+  }
+
   .intro-para {
     font-size: 20px;
     padding: 20px;
@@ -250,7 +258,9 @@ a {
   }
 
   .facebook,
-  .map {
+  .map,
+  .inscriptions,
+  .press {
     padding: 20px;
   }
 
