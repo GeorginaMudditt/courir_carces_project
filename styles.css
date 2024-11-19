@@ -225,7 +225,7 @@ a {
 @media (max-width: 1200px) {
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   h1 {
     font-size: 60px;
     text-align: center;
