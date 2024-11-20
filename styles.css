@@ -250,6 +250,10 @@ a {
     text-align: center;
   }
 
+  .smaller {
+    font-size: 25px;
+  }
+
   .image-gallery,
   .members,
   .parcours {
