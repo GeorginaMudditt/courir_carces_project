@@ -188,10 +188,9 @@ a {
 .finishers {
   border-radius: 20px;
   box-shadow: var(--box-shadow-darker);
-  height: auto;
   margin-right: 100px;
+  max-height: 300px;
   max-width: 500px;
-  object-fit: cover;
 }
 
 #river-pic {
@@ -249,8 +248,12 @@ a {
   .members,
   .parcours {
     grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
+    row-gap: 40px;
     margin: 20px;
+  }
+
+  .card {
+    margin-bottom: 100px;
   }
 }
 
@@ -262,6 +265,10 @@ a {
   h2 {
     font-size: 40px;
     text-align: center;
+  }
+
+  p {
+    font-size: 20px;
   }
 
   .smaller {
@@ -319,6 +326,21 @@ a {
 
   .race-times li {
     font-size: 20px;
+  }
+
+  .news-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 20px;
+    width: 100%;
+  }
+
+  .finishers {
+    border-radius: 20px;
+    box-shadow: var(--box-shadow-darker);
+    margin-top: 50px;
+    max-width: 500px;
+    width: 100%;
   }
 
   footer p {
