@@ -180,6 +180,15 @@ a {
   width: 100%;
 }
 
+.aside {
+  background-color: var(--feature-color-darker);
+  color: var(--background-color);
+}
+
+.aside a {
+  color: var(--background-color);
+}
+
 .news-container {
   display: flex;
   margin: 0 200px;
