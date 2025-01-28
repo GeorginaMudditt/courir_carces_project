@@ -80,12 +80,12 @@
                 <a class="nav-link" href="notre-equipe.html">Notre equipe</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nos-courses.html">Nos courses</a>
+                <a class="nav-link active" href="nos-courses.html"
+                  >Nos courses</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="nos-parcours.html"
-                  >Nos parcours</a
-                >
+                <a class="nav-link" href="nos-parcours.html">Nos parcours</a>
               </li>
 
               <li class="nav-item">
@@ -95,57 +95,53 @@
           </div>
         </div>
       </nav>
-      <h1 class="title-center">Nos Parcours</h1>
+      <h1 class="title-center">Nos courses</h1>
     </header>
     <main>
-      <p class="intro-para">
-        Le groupe se réunit chaque dimanche matin, et en général, nous courons
-        pendant 90 minutes à 2 heures.<br /><br />Voici quelques exemples de nos
-        sorties récentes :
+      <p class="intro-para center">
+        Nos membres voyagent fréquemment dans différentes localités de la région
+        pour participer à des courses et événements. Voici une liste des
+        événements à venir :
       </p>
-      <div class="parcours">
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/parcours/parcours_direction_cotignac.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Direction Cotignac</p>
-          </div>
+      <div class="race-container">
+        <div class="race-container-heading">
+            <h2 class="race-hide-sm">Date</h2>
+            <h2 class="race-hide-sm">Course</h2>
+            <h2 class="race-hide-sm">Lien</h2>
+            <h2 class="race-hide-m">Notes</h2>
         </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/parcours/parcours_direction_entrecasteaux.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Direction Entrecasteaux</p>
-          </div>
+        <div class="race-container-race" data-date="2025-02-02">
+            <p>02 Février 2025</p>
+            <p>Les Foulées Bessoises</p>
+            <button class="button-sm"><a href="https://chronosports.fr/evenement/besse-2025/" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">Courses de 10km et 15km</p>
         </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/parcours/parcours_direction_lac.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Direction Lac</p>
-          </div>
+        <div class="race-container-race" data-date="2025-02-23">
+            <p>23 Février 2025</p>
+            <p>Course Nature Carqueiranne</p>
+            <button class="button-sm"><a href="https://chronosports.fr/evenement/carqueiranne_nature-2025/" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">Parcours de 16 km sur routes, sentiers et chemins dans les collines de Carqueiranne</p>
         </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/parcours/parcours_direction_montfort.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Direction Montfort-sur-Argens</p>
-          </div>
+        <div class="race-container-race" data-date="2025-03-30">
+            <p>30 Mars 2025</p>
+            <p>Marathon du Golfe de St Tropez</p>
+            <button class="button-sm"><a href="https://www.marathondugolfedesainttropez.com/2025/fr/index.htm" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">Marathon, Relais, Transgolfe (sold out) & 10 km</p>
         </div>
-      </div>
+        <div class="race-container-race" data-date="2025-04-06">
+            <p>06 Avril 2025</p>
+            <p>Course du Lac</p>
+            <button class="button-sm"><a href="https://chronosports.fr/evenement/courseautourdulac-2025/#:~:text=Prix%20engagement%20%3A%2016%E2%82%AC%20pour,%2C%2031%2C%20rue%20Mar%C3%A9chal%20Foch" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">Organisé par Courir à Carcès</p>
+        </div>
+        <div class="race-container-race" data-date="2025-05-03">
+            <p>03 Mai 2025</p>
+            <p>Marathon Var Provence Verte</p>
+            <button class="button-sm"><a href="https://marathon-var-provence-verte.com/" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">Marathon, Relais, Semi, Run & Bike Marathon, Rando & 10 km</p>
+        </div>
     </main>
+
     <footer>
       <div class="footer-container">
         <div class="socials">
@@ -169,5 +165,19 @@
         </div>
       </div>
     </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const raceContainers = document.querySelectorAll(".race-container-race");
+    const currentDate = new Date();
+
+    raceContainers.forEach(container => {
+        const eventDateStr = container.getAttribute("data-date");
+        const eventDate = new Date(eventDateStr + "T00:00:00"); // Ensure time is set to midnight for accurate comparison
+        if (eventDate < currentDate) {
+            container.style.display = "none";
+        }
+    });
+});
+</script>
   </body>
 </html>

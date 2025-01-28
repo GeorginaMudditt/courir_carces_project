@@ -41,7 +41,8 @@ h2 {
 }
 
 p,
-li {
+li,
+a {
   font-family: var(--body-font);
   font-size: 25px;
   color: var(--text-color);
@@ -80,7 +81,21 @@ a {
   width: 100%;
 }
 
-.button-lg:hover {
+.button-sm {
+  background-color: var(--feature-color-lighter);
+  border: 5px solid var(--feature-color-lighter);
+  border-radius: 20px;
+  color: var(--text-color);
+  font-family: var(--heading-body);
+  font-size: 25px;
+  margin: 0 auto;
+  max-height: 60px;
+  padding: 5px;
+  max-width: 250px;
+}
+
+.button-lg:hover,
+.button-sm:hover {
   background-color: var(--background-color);
   border: 5px solid var(--feature-color-darker);
   box-shadow: var(--box-shadow-darker);
@@ -206,6 +221,18 @@ a {
   object-position: center;
 }
 
+/* Nos Courses CSS */
+.race-container {
+  margin: 0 20px;
+}
+.race-container-heading,
+.race-container-race {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 /* Nos Parcours CSS */
 
 .parcours img {
@@ -264,6 +291,9 @@ a {
   .card {
     margin-bottom: 100px;
   }
+  .race-hide-m {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -276,8 +306,16 @@ a {
     text-align: center;
   }
 
-  p {
+  p,
+  a {
     font-size: 20px;
+  }
+
+  .race-hide-sm {
+    display: none;
+  }
+  .race-container-race {
+    grid-template-columns: 1fr;
   }
 
   .smaller {
