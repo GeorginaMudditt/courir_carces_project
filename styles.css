@@ -400,13 +400,19 @@ a {
     width: 100%;
   }
 
-  .finishers,
-  .swiper-slide img {
-    border-radius: 20px;
-    box-shadow: var(--box-shadow-darker);
+  .finishers {
     margin-top: 50px;
     max-width: 500px;
     width: 100%;
+  }
+
+  .podiums {
+    margin: 20px;
+  }
+
+  .swiper {
+    width: 350px;
+    margin-bottom: 20px;
   }
 
   footer p {
