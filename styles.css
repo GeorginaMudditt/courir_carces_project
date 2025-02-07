@@ -400,7 +400,8 @@ a {
     width: 100%;
   }
 
-  .finishers {
+  .finishers,
+  .swiper-slide img {
     border-radius: 20px;
     box-shadow: var(--box-shadow-darker);
     margin-top: 50px;
