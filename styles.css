@@ -4,7 +4,7 @@
   --text-color: #283739;
   --feature-color-darker: #2c5d63;
   --feature-color-lighter: #a2c11c;
-  --heading-font: "Yellowtail", cursive;
+  --heading-font: "Nunito", sans-serif;
   --body-font: "Lato", sans-serif;
   --box-shadow-darker: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -206,7 +206,7 @@ a {
 
 .news-container {
   display: flex;
-  margin: 0 200px;
+  margin: 0 200px 50px 200px;
 }
 
 .finishers {
@@ -215,6 +215,24 @@ a {
   margin-right: 100px;
   max-height: 300px;
   max-width: 500px;
+}
+
+.swiper {
+  border-radius: 20px;
+  width: 500px;
+}
+
+.swiper-slide img {
+  border-radius: 20px;
+  box-shadow: var(--box-shadow-darker);
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  width: 500px;
+}
+
+.podiums {
+  margin-left: 100px;
 }
 
 #river-pic {

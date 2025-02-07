@@ -45,6 +45,10 @@
       src="https://kit.fontawesome.com/a127163454.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Courir à Carcès</title>
     <link rel="icon" type="image/png" href="./cac-favicon.png" />
     <meta name="title" content="Courir à Carcès" />
@@ -174,6 +178,33 @@
 
       <h2 class="title-center">Les actualités</h2>
       <div class="news-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/podiums/sebastien-podium.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/podiums/sylvie-podium.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/podiums/florence-podium.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="news-text">
+          <h3 class="podiums">Premiers podiums de 2025</h3>
+          <p class="podiums">
+            Les membres du Courir à Carcès commencent l'année 2025 en beauté,
+            avec trois podiums rien qu'en janvier. Félicitations à Sébastien,
+            Sylvie et Florence !
+          </p>
+        </div>
+      </div>
+      <div class="news-container">
         <img class="finishers img-fluid" src="images/membres/finisher1.jpg" />
         <div class="news-text">
           <h3>Grand Trail de la Valée du Drâa</h3>
@@ -186,11 +217,11 @@
             souriants à la ligne d'arrivée, photographiés avec leurs
             coéquipières Bérengère et Nathalie. Bravo à tous !!
           </p>
-          <a href="https://gtvd-trailmorocco.com/" target="_blank"
-            ><button class="facebook-button button-lg">
+          <a href="https://gtvd-trailmorocco.com/" target="_blank">
+            <button class="facebook-button button-lg">
               Plus d'informations sur la course
-            </button></a
-          >
+            </button>
+          </a>
         </div>
       </div>
       <h2 class="title-center">Les avantages de courir avec nous</h2>
@@ -412,5 +443,21 @@
         </div>
       </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
