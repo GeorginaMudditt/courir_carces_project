@@ -260,6 +260,14 @@ a {
 
 /* Course du Lac CSS */
 
+.race-full {
+  margin: 50px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-darker);
+  width: 50%;
+}
+
 .race-times {
   padding: 0 0 50px 200px;
 }
@@ -334,6 +342,9 @@ a {
   }
   .race-container-race {
     grid-template-columns: 1fr;
+  }
+  .race-full {
+    width: 90%;
   }
 
   .smaller {
