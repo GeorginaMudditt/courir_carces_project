@@ -67,6 +67,8 @@ a {
 
 .sub-heading {
   text-align: center;
+  margin: 0 100px 50px 100px;
+  font-size: 50px;
 }
 
 .button-lg {
@@ -260,20 +262,18 @@ a {
 
 /* Course du Lac CSS */
 
-.race-full {
-  margin: 50px auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow: var(--box-shadow-darker);
-  width: 50%;
-}
-
 .race-times {
   padding: 0 0 50px 200px;
 }
 
 .course-pics {
   margin: 50px 100px 10px 100px;
+}
+
+.fb-link {
+  font-size: 50px;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /*  Contact CSS */
