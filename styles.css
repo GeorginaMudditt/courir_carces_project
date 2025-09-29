@@ -71,6 +71,10 @@ a {
   font-size: 40px;
 }
 
+.larger-font {
+  font-size: 40px;
+}
+
 .button-lg {
   background-color: var(--feature-color-lighter);
   border: 5px solid var(--feature-color-lighter);
@@ -281,6 +285,14 @@ a {
   font-size: 40px;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.course26-img {
+  border-radius: 20px;
+  box-shadow: var(--box-shadow-darker);
+  width: 90%;
+  margin: 0 auto 50px auto;
+  display: block;
 }
 
 /*  Contact CSS */
