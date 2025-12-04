@@ -622,6 +622,9 @@ button:focus-visible,
 .parcours img {
   padding: 1.25rem;
   object-position: center;
+  height: auto !important;
+  object-fit: contain !important;
+  width: 100%;
 }
 
 /* Course du Lac CSS */
@@ -707,6 +710,25 @@ button:focus-visible,
   box-shadow: var(--box-shadow-lighter);
   background-color: white !important;
   padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+  
+  .navbar-brand img {
+    width: 100px !important;
+  }
+  
+  main {
+    margin-top: 1rem;
+  }
+  
+  main h1,
+  main h2:first-of-type {
+    margin-top: 0.5rem;
+  }
 }
 
 .navbar-brand img {
@@ -1099,7 +1121,20 @@ html {
   }
   
   .navbar-brand img {
-    width: 120px !important;
+    width: 100px !important;
+  }
+  
+  .navbar {
+    padding: 0.5rem 0 !important;
+  }
+  
+  main {
+    margin-top: 1rem;
+  }
+  
+  main h1,
+  main h2:first-of-type {
+    margin-top: 0.5rem;
   }
   
   .course26-img {
