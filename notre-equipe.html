@@ -15,13 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Gudea:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Gudea:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
     <link
@@ -44,11 +38,12 @@
     <link rel="icon" type="image/png" href="./cac-favicon.png" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" role="navigation" aria-label="Navigation principale">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo_2.jpeg" width="150px"
+          <a class="navbar-brand" href="index.html" aria-label="Retour à l'accueil">
+            <img src="images/logo_2.jpeg" width="150px" alt="Courir à Carcès - Logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -92,326 +87,342 @@
       </nav>
       <h1 class="title-center">Notre Equipe</h1>
     </header>
-    <main>
+    <main id="main-content">
       <p class="intro-para">
         Nous avons des membres de tous âges et de tous niveaux. Que vous soyez
         débutant en course à pied ou marathonien expérimenté, vous trouverez
         quelqu'un de votre niveau avec qui courir.
       </p>
       <div class="members">
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/photo_Sylive.png"
-            alt="Card image cap"
+            alt="Sylvie"
           />
           <div class="card-body">
             <p class="card-text">Sylvie :<br />Présidente</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/jacques.jpg"
-            alt="Card image cap"
+            alt="Jacques"
           />
           <div class="card-body">
             <p class="card-text">Jacques :<br />Vice-Président</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/serge.jpg"
-            alt="Card image cap"
+            alt="Serge"
           />
           <div class="card-body">
             <p class="card-text">Serge :<br />Vice-Président</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/photo_Herve.jpg"
-            alt="Card image cap"
+            alt="Hervé"
           />
           <div class="card-body">
             <p class="card-text">Hervé :<br />Vice-Président</p>
           </div>
         </div>
-      </div>
-      <div class="members">
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
+            id="eliane"
             class="card-img-top"
             src="images/membres/photo_Eliane.jpg"
-            alt="Card image cap"
+            alt="Eliane"
           />
           <div class="card-body">
             <p class="card-text">Eliane :<br />Secrétaire</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
+            id="delphine-d"
             class="card-img-top"
             src="images/membres/photo_Delphine.jpg"
-            alt="Card image cap"
+            alt="Delphine D"
           />
           <div class="card-body">
             <p class="card-text">Delphine D :<br />Trésorière</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
+            id="claire"
             class="card-img-top"
             src="images/membres/claire.jpg"
-            alt="Card image cap"
+            alt="Claire"
           />
           <div class="card-body">
             <p class="card-text">Claire</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
+            id="audrey"
             class="card-img-top"
             src="images/membres/audrey.jpg"
-            alt="Card image cap"
+            alt="Audrey"
           />
           <div class="card-body">
             <p class="card-text">Audrey</p>
           </div>
         </div>
-      </div>
-      <div class="members">
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/photo_Patrice.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Patrice</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/georgina.jpg"
-            alt="Card image cap"
+            alt="Georgina"
           />
           <div class="card-body">
             <p class="card-text">Georgina</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
+            id="rodolph"
             class="card-img-top"
             src="images/membres/rodolph.jpg"
-            alt="Card image cap"
+            alt="Rodolph"
           />
           <div class="card-body">
             <p class="card-text">Rodolph</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
+            id="florence"
             class="card-img-top"
             src="images/membres/florence.jpg"
-            alt="Card image cap"
+            alt="Florence"
           />
           <div class="card-body">
             <p class="card-text">Florence</p>
           </div>
         </div>
-      </div>
-      <div class="members">
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/philippe.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Philippe</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/valerie.jpg"
-            alt="Card image cap"
+            alt="Valérie"
           />
           <div class="card-body">
             <p class="card-text">Valérie</p>
           </div>
         </div>
-        
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/carol.jpg"
-            alt="Card image cap"
+            alt="Carol"
           />
           <div class="card-body">
             <p class="card-text">Carol</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/christel.jpg"
-            alt="Card image cap"
+            alt="Christel"
           />
           <div class="card-body">
             <p class="card-text">Christel</p>
           </div>
         </div>
-      </div>
-      <div class="members">
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/fred.jpg"
-            alt="Card image cap"
+            alt="Fred"
           />
           <div class="card-body">
             <p class="card-text">Fred</p>
           </div>
         </div>
-        
-        
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/seb.jpg"
-            alt="Card image cap"
+            alt="Sébastien"
           />
           <div class="card-body">
             <p class="card-text">Sébastien</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
+            id="georges-c"
             class="card-img-top"
             src="images/membres/georges.jpg"
-            alt="Card image cap"
+            alt="Georges C"
           />
           <div class="card-body">
             <p class="card-text">Georges C</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/georges-d.jpg"
-            alt="Card image cap"
+            alt="Georges D"
           />
           <div class="card-body">
             <p class="card-text">Georges D</p>
           </div>
         </div>
-      </div>
-      <div class="members">
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/delphinec.jpg"
-            alt="Card image cap"
+            alt="Delphine C"
           />
           <div class="card-body">
             <p class="card-text">Delphine C</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/annie.jpg"
-            alt="Card image cap"
+            alt="Annie"
           />
           <div class="card-body">
             <p class="card-text">Annie</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/vincent.jpg"
-            alt="Card image cap"
+            alt="Vincent"
           />
           <div class="card-body">
             <p class="card-text">Vincent</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/sylviec.jpeg"
-            alt="Card image cap"
+            alt="Sylvie C"
           />
           <div class="card-body">
             <p class="card-text">Sylvie C</p>
           </div>
         </div>
-      </div>
-      <div class="members">
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
+            id="phillipe-s"
             class="card-img-top"
             src="images/membres/philippes.jpeg"
-            alt="Card image cap"
+            alt="Phillipe S"
           />
           <div class="card-body">
             <p class="card-text">Phillipe S</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/membres/thomas.jpeg"
+            alt="Thomas"
+          />
+          <div class="card-body">
+            <p class="card-text">Thomas</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/membres/florence-l.jpeg"
+            alt="Florence L"
+          />
+          <div class="card-body">
+            <p class="card-text">Florence L</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/membres/raphael.jpeg"
+            alt="Raphaël"
+          />
+          <div class="card-body">
+            <p class="card-text">Raphaël</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/membres/phillipe.jpeg"
+            alt="Phillipe"
+          />
+          <div class="card-body">
+            <p class="card-text">Phillipe</p>
+          </div>
+        </div>
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/isabelle.jpg"
-            alt="Card image cap"
+            alt="Isabelle"
           />
           <div class="card-body">
             <p class="card-text">Isabelle</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/membres/jean-louis.jpg"
-            alt="Card image cap"
+            alt="Jean-Louis"
           />
           <div class="card-body">
             <p class="card-text">Jean-Louis</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
-          id="murielle"
+            id="murielle"
             class="card-img-top"
             src="images/membres/murielle.jpg"
-            alt="Card image cap"
+            alt="Murielle"
           />
           <div class="card-body">
             <p class="card-text">Murielle</p>
           </div>
         </div>
-      </div>
-        
-        <div class="members">
-          <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             class="card-img-top"
             src="images/logo_2.jpeg"
-            alt="Card image cap"
+            alt="Sandrine"
           />
           <div class="card-body">
-            <p class="card-text">Olga</p>
+            <p class="card-text">Sandrine</p>
           </div>
         </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/logo_2.jpeg"
+            alt="Marine"
+          />
+          <div class="card-body">
+            <p class="card-text">Marine</p>
+          </div>
         </div>
-        
-      </div>
-      </div> 
       </div>
     </main>
     <footer>

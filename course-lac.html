@@ -20,13 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Gudea:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Gudea:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
     <link
@@ -45,15 +39,20 @@
       src="https://kit.fontawesome.com/a127163454.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Courir à Carcès</title>
     <link rel="icon" type="image/png" href="./cac-favicon.png" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" role="navigation" aria-label="Navigation principale">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"
-            ><img src="images/logo_2.jpeg" width="150px"
+          <a class="navbar-brand" href="./index.html" aria-label="Retour à l'accueil"
+            ><img src="images/logo_2.jpeg" width="150px" alt="Courir à Carcès - Logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -108,176 +107,160 @@
         Deux parcours sont proposés : 16 km et 7 km, ainsi que un rando gourmande et des courses pour
         les enfants.
     </header>
-    <main>
-      <div class="image-gallery course-pics">
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/lac_1.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Les organisateurs</p>
+    <main id="main-content">
+      <!-- Course du Lac Photo Gallery Carousel -->
+      <div class="swiper course-lac-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/lac_1.jpeg"
+                alt="Les organisateurs"
+              />
+              <div class="card-body">
+                <p class="card-text">Les organisateurs</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/lac_3.jpeg"
+                alt="Le village"
+              />
+              <div class="card-body">
+                <p class="card-text">Le village</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/cac_2.jpg"
+                alt="Le départ"
+              />
+              <div class="card-body">
+                <p class="card-text">Le départ</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/cac_1.jpg"
+                alt="Direction lac"
+              />
+              <div class="card-body">
+                <p class="card-text">Direction lac</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/lac_6.jpeg"
+                alt="Récupération dossards"
+              />
+              <div class="card-body">
+                <p class="card-text">Récupération dossards</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/lac_5.jpeg"
+                alt="Le départ"
+              />
+              <div class="card-body">
+                <p class="card-text">Le départ</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/lac_8.jpeg"
+                alt="Le canal 7 km"
+              />
+              <div class="card-body">
+                <p class="card-text">Le canal 7 km</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/lac_9.jpeg"
+                alt="Le retour 7 km"
+              />
+              <div class="card-body">
+                <p class="card-text">Le retour 7 km</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/lac_17.jpeg"
+                alt="Nos bénévoles"
+              />
+              <div class="card-body">
+                <p class="card-text">Nos bénévoles</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/lac_16.jpeg"
+                alt="Autour du lac"
+              />
+              <div class="card-body">
+                <p class="card-text">Autour du lac</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/lac_19.jpeg"
+                alt="Autour du lac"
+              />
+              <div class="card-body">
+                <p class="card-text">Autour du lac</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/course_lac/lac_21.jpg"
+                alt="Départ enfants"
+              />
+              <div class="card-body">
+                <p class="card-text">Départ enfants</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/lac_3.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Le village</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/cac_2.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Le départ</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/cac_1.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Direction lac</p>
-          </div>
-        </div>
-      </div>
-      <!-- <p class="intro-para">
-        La Course Autour du Lac de Carcès organisée tous les ans en avril est
-        depuis plus de 27 ans un évènement majeur dans la vie communale
-        Carçoise. En 2024, il y avait 330 coureurs adultes répartis sur les deux
-        courses, 90 enfants, 60 bénévoles, et 60 associations, sponsors,
-        partenaires et commerçants locaux. Faisons de 2025 une année encore plus
-        grande ! <br /><br />
-        Les inscriptions pour la Course du Lac 2025, qui aura lieu le dimanche 6
-        avril 2025, sont ouvertes sur
-        <a
-          class="underline"
-          href=""
-          target="_blank"
-          >Chronosports.fr.</a
-        ><br /><br />
-        Les départs se font depuis la place de la Mairie de Carcès, aux horaires
-        suivants :
-      </p>
-      <ul class="race-times">
-        <li>09H00 : Départ 17 km</li>
-        <li>09H15 : Départ 7 km</li>
-        <li>11H00 : Départ des courses enfants</li>
-      </ul> -->
-      <!-- <div class="inscriptions-press-container">
-        <div class="inscriptions">
-          <h2>Rejoignez-nous</h2>
-          <p>Les inscriptions sont ouvertes pour 2025.</p>
-          <a href="" target="_blank"
-            ><button class="facebook-button button-lg">
-              Inscrivez-vous
-              <i class="fa-solid fa-arrow-up-right-from-square"></i></button
-          ></a>
-        </div> -->
-        <!-- <div class="press">
-          <h2>En savoir plus</h2>
-          <p>Lisez le communiqué de presse complet.</p>
-          <a href="" target="_blank"
-            ><button class="facebook-button button-lg">
-              Plus d’informations
-            </button></a
-          >
-        </div> -->
-      </div>
-      <div class="image-gallery course-pics">
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/lac_6.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Récupération dossards</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/lac_5.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Le départ</p>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/lac_8.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Le canal 7 km</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/lac_9.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Le retour 7 km</p>
-          </div>
-        </div>
-      </div>
-      <div class="image-gallery course-pics">
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/lac_17.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Nos bénévoles</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/lac_16.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Autour du lac</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/lac_19.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Autour du lac</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/course_lac/lac_21.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Départ enfants</p>
-          </div>
-        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </main>
     <footer>
@@ -303,5 +286,48 @@
         </div> -->
       </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      // Course du Lac photo gallery carousel
+      var courseLacSwiper = new Swiper(".course-lac-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

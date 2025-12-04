@@ -20,13 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Gudea:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Gudea:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
     <link
@@ -57,11 +51,12 @@
     <meta property="og:url" content="https://courir-a-carces.com/nos-courses" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" role="navigation" aria-label="Navigation principale">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"
-            ><img src="images/logo_2.jpeg" width="150px"
+          <a class="navbar-brand" href="./index.html" aria-label="Retour à l'accueil"
+            ><img src="images/logo_2.jpeg" width="150px" alt="Courir à Carcès - Logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -105,7 +100,7 @@
       </nav>
       <h1 class="title-center">Nos courses</h1>
     </header>
-    <main>
+    <main id="main-content">
       <p class="intro-para center">
         Nos membres voyagent fréquemment dans différentes localités de la région
         pour participer à des courses et événements. Voici une liste des
@@ -251,13 +246,25 @@ de la Bonette</p>
             <button class="button-sm"><a href="https://chronosports.fr/evenement/probace-2025/" target="_blank">Inscription</a></button>
             <p class="race-hide-m">Courses de 6km et 12km</p>
         </div>
+        <div class="race-container-race" data-date="2025-12-07">
+            <p>07 Décembre 2025</p>
+            <p>Fréjus Urban Trail</p>
+            <button class="button-sm"><a href="https://frejusurbantrail.fr/" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">15 km / 8 km / 4 km / course enfants</p>
+        </div>
+        <div class="race-container-race" data-date="2025-12-10">
+            <p>10 au 14 Décembre 2025</p>
+            <p>Hyères Running Days</p>
+            <button class="button-sm"><a href="https://hyeresrunningdays.com/" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">Coureurs, marcheurs et longeurs de tous horizons et de tous niveaux</p>
+        </div>
         <div class="race-container-race" data-date="2025-12-14">
             <p>13 Décembre 2025</p>
             <p>La Ronde des Pères Noël, Cavalaire-sur-Mer</p>
             <button class="button-sm"><a href="https://www.christmasrun.fr/?fbclid=IwY2xjawNHclVleHRuA2FlbQIxMABicmlkETEyaVZHNlZLaXp5QkgwUG9PAR72KizEL8XVq73Z7gowFEge-e9ug6Sc0vv31BfG_GHeaOqOI-kKGCVYwB1UPA_aem_Rt_EO8LDZgPI9e5e77D27w" target="_blank">Inscription</a></button>
             <p class="race-hide-m">Courses de 5km et 10km, course enfants</p>
         </div>
-                <div class="race-container-race" data-date="2025-12-15">
+        <div class="race-container-race" data-date="2025-12-15">
             <p>14 Décembre 2025</p>
             <p>Trail de Noël Ollioules</p>
             <button class="button-sm"><a href="https://traildenoelollioules.fr/" target="_blank">Inscription</a></button>
@@ -268,6 +275,30 @@ de la Bonette</p>
             <p>Bandol Classic de Noël</p>
             <button class="button-sm"><a href="https://bandolclassic.fr/home-winter-edition/" target="_blank">Inscription</a></button>
             <p class="race-hide-m">Courses de 11,6km et 5,8km</p>
+        </div>
+        <div class="race-container-race" data-date="2026-01-04">
+            <p>04 Janvier 2026</p>
+            <p>Nice Prom Classic</p>
+            <button class="button-sm"><a href="https://www.promclassic.com/v26/" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">10 km (complet)</p>
+        </div>
+        <div class="race-container-race" data-date="2026-01-11">
+            <p>11 Janvier 2026</p>
+            <p>L'Ayguadoise</p>
+            <button class="button-sm"><a href="https://ayguadoise.asptt.com/" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">10 km, 5 km, 1 km Enfants</p>
+        </div>
+        <div class="race-container-race" data-date="2026-01-25">
+            <p>25 Janvier 2026</p>
+            <p>Cannes Urban Trail</p>
+            <button class="button-sm"><a href="https://www.cannesurbantrail.fr/" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">27 km, 16 km et 9 km</p>
+        </div>
+        <div class="race-container-race" data-date="2026-02-22">
+            <p>22 Février 2026</p>
+            <p>Semi de Cannes</p>
+            <button class="button-sm"><a href="https://www.semi-cannes.com/" target="_blank">Inscription</a></button>
+            <p class="race-hide-m">Semi marathon (complet) plus 10 km et 5 km</p>
         </div>
     </main>
 
@@ -297,11 +328,15 @@ de la Bonette</p>
     <script>
 document.addEventListener("DOMContentLoaded", function() {
     const raceContainers = document.querySelectorAll(".race-container-race");
-    const currentDate = new Date();
+    // Set current date to start of today (midnight) for accurate comparison
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const currentDate = today;
 
     raceContainers.forEach(container => {
         const eventDateStr = container.getAttribute("data-date");
-        const eventDate = new Date(eventDateStr + "T00:00:00"); // Ensure time is set to midnight for accurate comparison
+        const eventDate = new Date(eventDateStr + "T00:00:00"); // Race date at midnight
+        // Hide races where the event date is before today (i.e., hide starting the day after the race)
         if (eventDate < currentDate) {
             container.style.display = "none";
         }

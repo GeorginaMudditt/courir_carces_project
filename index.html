@@ -20,13 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Gudea:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Gudea:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
     <link
@@ -67,11 +61,12 @@
     />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" role="navigation" aria-label="Navigation principale">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img src="images/logo_2.jpeg" width="150px"
+          <a class="navbar-brand" href="index.html" aria-label="Retour à l'accueil"
+            ><img src="images/logo_2.jpeg" width="150px" alt="Courir à Carcès - Logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -117,7 +112,7 @@
         <h2 class="hero-text">83570 Carcès, Var 🇫🇷</h2>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       <p class="intro-para">
         Courir à Carcès est une association sportive située dans le village de
         Carcès, dans la région du Var en Provence. Nous nous retrouvons chaque
@@ -265,7 +260,7 @@
           <img
             class="card-img-top undraw"
             src="images/undraw_fitness_tracker_3033.png"
-            alt="Card image cap"
+            alt=""
           />
           <div class="card-body">
             <p class="card-text">
@@ -281,7 +276,7 @@
           <img
             class="card-img-top undraw"
             src="images/undraw_fitness_stats_sht6.png"
-            alt="Card image cap"
+            alt=""
           />
           <div class="card-body">
             <p class="card-text">
@@ -297,7 +292,7 @@
           <img
             class="card-img-top undraw"
             src="images/undraw_Conversation_re_c26v.png"
-            alt="Card image cap"
+            alt=""
           />
           <div class="card-body">
             <p class="card-text">
@@ -313,7 +308,7 @@
           <img
             class="card-img-top undraw"
             src="images/undraw_Country_side_re_0dou.png"
-            alt="Card image cap"
+            alt=""
           />
           <div class="card-body">
             <p class="card-text">
@@ -327,132 +322,160 @@
         </div>
       </div>
 
-      <div class="image-gallery">
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cac_12.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Cannes</p>
+      <!-- Photo Gallery Carousel -->
+      <div class="swiper photo-gallery-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cac_12.jpeg"
+                alt="Cannes"
+              />
+              <div class="card-body">
+                <p class="card-text">Cannes</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cac_15.jpeg"
+                alt="Carcès"
+              />
+              <div class="card-body">
+                <p class="card-text">Carcès</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cac_16.jpeg"
+                alt="Carcès"
+              />
+              <div class="card-body">
+                <p class="card-text">Carcès</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cac_3~3.jpg"
+                alt="Salernes"
+              />
+              <div class="card-body">
+                <p class="card-text">Salernes</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cac_la_londe.jpg"
+                alt="La Londe-les-Maures"
+              />
+              <div class="card-body">
+                <p class="card-text">La Londe-les-Maures</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cac_petanque.jpg"
+                alt="Carcès"
+              />
+              <div class="card-body">
+                <p class="card-text">Carcès</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cac_20.jpg"
+                alt="Carcès"
+              />
+              <div class="card-body">
+                <p class="card-text">Carcès</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cac_22.jpg"
+                alt="Carcès"
+              />
+              <div class="card-body">
+                <p class="card-text">Carcès</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cac_5~2.jpg"
+                alt="Fréjus"
+              />
+              <div class="card-body">
+                <p class="card-text">Fréjus</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cac_8~2.jpg"
+                alt="Cuers"
+              />
+              <div class="card-body">
+                <p class="card-text">Cuers</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                id="river-pic"
+                src="images/membres/cac_21.jpg"
+                alt="Carcès"
+              />
+              <div class="card-body">
+                <p class="card-text">Carcès</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/membres/cotignac2.jpg"
+                alt="Cotignac"
+              />
+              <div class="card-body">
+                <p class="card-text">Cotignac</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cac_15.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Carcès</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cac_16.jpeg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Carcès</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cac_3~3.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Salernes</p>
-          </div>
-        </div>
-      </div>
-      <div class="image-gallery">
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cac_la_londe.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">La Londe-les-Maures</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cac_petanque.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Carcès</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cac_20.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Carcès</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cac_22.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Carcès</p>
-          </div>
-        </div>
-      </div>
-      <div class="image-gallery">
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cac_5~2.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Fréjus</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cac_8~2.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Cuers</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            id="river-pic"
-            src="images/membres/cac_21.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Carcès</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/membres/cotignac2.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <p class="card-text">Cotignac</p>
-          </div>
-        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </main>
     <footer>
@@ -483,14 +506,41 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      // Photo gallery carousel
+      var photoGallerySwiper = new Swiper(".photo-gallery-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
-          type: "progressbar",
+          clickable: true,
+          dynamicBullets: true,
         },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
         },
       });
     </script>
