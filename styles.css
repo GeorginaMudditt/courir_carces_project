@@ -621,6 +621,10 @@ button:focus-visible,
   object-position: center 60%;
 }
 
+#valerie-d {
+  object-position: center center;
+}
+
 #murielle {
   object-position: center 50%;
 }
