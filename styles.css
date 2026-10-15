@@ -605,12 +605,20 @@ button:focus-visible,
 #eliane,
 #delphine-d,
 #claire,
-#audrey,
 #rodolph,
 #florence,
 #georges-c,
 #phillipe-s {
   object-position: center 8%;
+}
+
+#audrey {
+  object-fit: cover;
+  object-position: center 75%;
+}
+
+#anais {
+  object-position: center 60%;
 }
 
 #murielle {
